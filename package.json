@@ -1,0 +1,23 @@
+{
+  "name": "ditto-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "build": "esbuild index.js --bundle --platform=node --format=esm \"--banner:js=#!/usr/bin/env node\" --outdir=dest"
+  },
+  "bin": {
+    "ditto": "./dest/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.6.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
